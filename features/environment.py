@@ -7,10 +7,10 @@ def before_all(context) -> None:
     """
     Configure before starting test execution
     """
-    context.settings = safe_load(open('features/conf.yaml').read())
-    context.token = ""
-    context.baseURL = ""
-    context.stored_data = {}
+    context.settings = safe_load(open('features/config.yaml').read())
+    context.env = os.getenv('env','qa') #default env=qa if empty env parameter
+    context.url = context.settings[context.env]['baseURL']
+    context.petId= ""
     context.headers = {}
     context.body = {}
     context.response_code = {}
