@@ -4,10 +4,10 @@ Test Automation Framework Using Python and Behave BDD to test REST services and 
 Swagger For Demo: http://petstore.swagger.io/
 
 ## Installation
-- Create virtual environment directory by command : ` python -m venv .env` 
+- Create virtual environment directory by command : ` python -m venv env` 
 - Activate the virtual environment by command : `env/Script/activate` or  ` source env/bin/activate`
-- Install library dependency by command : ` pip -r install requirements.txt`
-- Install Allure Report for Behave
+- Install library dependency by command : ` pip install -r requirements.txt`
+- Install Report Portal Agent for Behave by command `pip install behave-reportportal`
 + Intall Scoop if the os is window and Brew if the os is Mac before installing the allure.
 
 ## Project Structure
@@ -42,19 +42,10 @@ Swagger For Demo: http://petstore.swagger.io/
 # choose testing environment (e.g., qa environment)
 export env=qa
 
-# set client_id value
-export client_id=client_id_of_env
-
-# set client_secret value
-export client_secret=secret_id_of_env
-
-#set baseURL and endpoing
-export baseURL=base_url
-
 # execute all feature files without using the shell script (all tests)
 behave
 
-# execture specific feature without using the shell script
+# execute a specific feature without using the shell script
 behave features/regression_test/sample.feature
 
 # show the printed output without using the shell script

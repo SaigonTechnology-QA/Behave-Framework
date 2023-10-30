@@ -1,6 +1,0 @@
-qa:
-  baseURL: 'https://petstore.swagger.io/v2'
-  
-staging:
-  baseURL: 'https://petstore.swagger.io/v2'
-  

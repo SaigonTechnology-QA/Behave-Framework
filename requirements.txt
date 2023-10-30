@@ -1,4 +1,5 @@
 behave
+setuptools
 PyHamcrest
 requests
 allure_behave
