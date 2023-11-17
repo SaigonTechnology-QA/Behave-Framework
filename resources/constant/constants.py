@@ -1,5 +1,5 @@
-
-
 class Contanst:
     BASEURL = 'https://api.netbase.sdc1.com:8088'
-    LOGIN_EP = '/api/Account/login'
+    USERNAME = 'admin'
+    PASSWORD = 'P@ssword1234'
+
